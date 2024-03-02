@@ -1,0 +1,287 @@
+/* General rules */
+body {
+    font-family: "Helvetica", Sans-Serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* Common styles */
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* navbar section */
+.navbar {
+    background-color: #FFFFFF;
+}
+
+.logo {
+    width: 15%;
+    margin-left: 2rem;
+}
+
+/* header */
+.header {
+    position: relative;
+    /* Ensure positioning context for absolute positioning */
+    flex-wrap: wrap;
+}
+
+.header-image {
+    position: relative;
+    /* Set the container to relative position */
+    width: 100%;
+    overflow: hidden;
+    /* Hide any overflow to prevent text extending beyond the image */
+}
+
+.header-image img {
+    width: 100%;
+    /* Ensure image fills its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.image-text {
+    position: absolute;
+    /* Position the text absolutely inside the container */
+    bottom: 20px;
+    /* Adjust the distance from the bottom */
+    left: 20px;
+    /* Adjust the distance from the left */
+    /* Add padding for better readability */
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    padding-bottom: 6rem;
+    padding-left: 10rem;
+
+}
+
+.image-text h2 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 25px;
+    /* Adjust the font size as needed */
+    color: #000;
+    /* Adjust text color */
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat font for h2 */
+    font-weight: 800;
+}
+
+.image-text p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    font-family: 'Poppins', sans-serif;
+    /* Use Poppins font for the paragraph */
+    font-weight: 500;
+    /* Set font weight to semi-bold for paragraph */
+    font-style: italic;
+    /* Set font style to italic for paragraph */
+    padding-top: 1rem;
+}
+
+.color-40 {
+    color: #FFB800;
+}
+
+
+/* Middle section */
+.content{
+    margin-bottom: 3rem;
+}
+
+.image-background {
+    position: absolute;
+    width: 100%; /* Adjust the width as needed */
+    height: 60%; /* Adjust the height as needed */
+    background-image: url('images/Section.png'); /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover;
+    z-index: -1; /* Ensure the image is behind the text and form */
+    margin-top: 25rem;
+}
+
+.content-text,
+.form-container {
+    position: relative;
+    z-index: 1; /* Ensure text and form are on top of the image */
+    margin-top: 2rem;
+}
+
+
+
+.content h2 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 20px;
+    /* Adjust the font size as needed */
+    color: #000;
+    /* Adjust text color */
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat font for h2 */
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.content p {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    font-family: 'Poppins', sans-serif;
+    /* Use Poppins font for the paragraph */
+    font-weight: 500;
+    /* Set font weight to semi-bold for paragraph */
+    padding: 0.5rem;
+}
+
+.content ul {
+    margin: 0;
+    /* Remove default margin */
+    padding-left: 20px;
+    /* Add left padding to the list */
+    font-family: 'Poppins', sans-serif;
+    /* Use Poppins font for the list */
+    font-weight: 500;
+    /* Set font weight to semi-bold for list items */
+    padding: 0.5rem;
+}
+
+.list-text {
+    padding: 0.5rem;
+}
+
+.content-text {
+    padding-top: 3rem;
+    padding-left: 13rem;
+    padding-bottom: 3rem;
+    float: left;
+    /* Align teaxt to the left */
+    width: 50%;
+    /* Occupy 50% of the content area */
+
+}
+
+/* Form */
+.form-container {
+    position: sticky;
+    top: 50px;
+    /* Adjust as needed to avoid overlap with other elements */
+    float: right;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    padding-right: 5px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    transition: border-color 0.3s ease;
+}
+
+
+input[type="checkbox"] {
+    width: 10%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    border-color: #1BB295;
+}
+
+input[type="submit"] {
+    width: 30%;
+    padding: 12px;
+    border: none;
+    border-radius: 0;
+    background-color: #FF9A00;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #179b81;
+}
+
+
+#fname,
+#lname {
+    width: 48%; 
+    margin: 5px;
+}
+
+#job,
+#country,
+#industry {
+    width: 48%; 
+    margin: 5px;
+}
+
+
+.checkbox {
+    width: 10px; 
+    height: 10px; 
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: black;
+    margin-top: 48rem;
+        background-image: url('images/footer.png');
+}
+
+.footer-text{
+    color:#FFFFFF;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+
